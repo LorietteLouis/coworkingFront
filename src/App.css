@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color : white;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  Header {
+    background: orange;
+    background: linear-gradient(180deg, orange 0%, orangered 47%, black 100%);
+  
   }
-  to {
-    transform: rotate(360deg);
+  .header-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
   }
-}
+  img{
+    height: 10vh;
+    border-radius: 50%;
+  
+  }
+  .header-top ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-top li{
+    margin: 15px 0;
+    padding: 0 15px ;
+    cursor: pointer;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  
+  .footer-de-nerf{
+    background-color: orange;
+    margin: 0;
+    padding: 10px;
+    
+  }
+  
+  .footer-top-logo{
+    height: 10vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home{
+    padding: 20px;
+    
+    width: 300px;
+    margin: 155px auto;
+    border-radius: 15px;
+  
+  }
+  
+  h1 {
+    text-align: center;
+  }
+ 
+
+  
+  
+  .coworkings{
+    margin: 50px auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  
+  
+  
+  
+  .horraire{
+    display: flex;
+    justify-content: space-around;
+  }
