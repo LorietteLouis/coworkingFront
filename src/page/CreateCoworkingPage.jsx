@@ -49,53 +49,53 @@ const CreateCoworkingPage = () => {
         <>
         <Header/>
         <form onSubmit={handleCreateCoworking} className="create-coworking">
-          <div>
-            <label htmlFor="name">Name</label>
+          <div className="label-forma">
+            <label htmlFor="name">Nom</label>
             <input type="text" name="name" />
           </div>
     
-          <div>
-            <label htmlFor="superficy">Superficy</label>
+          <div className="label-forma">
+            <label htmlFor="superficy">Superficie</label>
             <input type="number" name="superficy" />
           </div>
     
-          <div>
-            <label htmlFor="capacity">Capacity</label>
+          <div className="label-forma">
+            <label htmlFor="capacity">Capacité</label>
             <input type="number" name="capacity" />
           </div>
     
-          <div>
-            <label htmlFor="price_hour">Price by hour</label>
+          <div className="label-forma">
+            <label htmlFor="price_hour">Le prix par heur</label>
             <input type="number" name="price_hour" />
           </div>
     
-          <div>
-            <label htmlFor="price_day">Price by day</label>
+          <div className="label-forma">
+            <label htmlFor="price_day">Le prix par jour</label>
             <input type="number" name="price_day" />
           </div>
     
-          <div>
-            <label htmlFor="price_month">Price by month</label>
+          <div className="label-forma">
+            <label htmlFor="price_month">Le prix par mois</label>
             <input type="number" name="price_month" />
           </div>
     
-          <div>
-            <label htmlFor="address_number">Address number</label>
+          <div className="label-forma">
+            <label htmlFor="address_number">numéro d'adresse</label>
             <input type="number" name="address_number" />
           </div>
     
-          <div>
-            <label htmlFor="address_street">Address street</label>
+          <div className="label-forma">
+            <label htmlFor="address_street">Adresse</label>
             <input type="text" name="address_street" />
           </div>
     
-          <div>
-            <label htmlFor="address_postcode">Address zipcode</label>
+          <div className="label-forma">
+            <label htmlFor="address_postcode">Code Postale</label>
             <input type="number" name="address_postcode" />
           </div>
     
-          <div>
-            <label htmlFor="address_city">Address city</label>
+          <div className="label-forma">
+            <label htmlFor="address_city">Nom de la ville</label>
             <input type="text" name="address_city" />
           </div>
     

@@ -79,6 +79,13 @@ body {
     border-radius: 15px;
   }
 
+  .label-forma{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items:flex-end;
+  }
+
   
   
   
