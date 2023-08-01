@@ -28,6 +28,9 @@ const Header = () => {
           <li>
             <Link to="/coworkings/create">Creation</Link>
           </li>
+          <li>
+            <Link to="/coworkings/:id/update">Update</Link>
+          </li>
         </ul>
       </nav>
       <form onSubmit={handleSubmit}>

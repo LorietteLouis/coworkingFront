@@ -86,6 +86,20 @@ body {
     align-items:flex-end;
   }
 
+  .update-forma{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items:flex-end;
+  }
+
+  .updatingPage{
+    margin: 50px auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
   
   
   

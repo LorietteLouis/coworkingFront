@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
+import { Link} from "react-router-dom";
 
 
 const CoworkingsPage = () => {
@@ -29,6 +30,9 @@ const handleDeleteCoworking = async (coworkingId)  => {
   setDeleteCoworkingMessage(responseDeleteJs.message);
 };
 
+
+
+
 return (
   <div>
     <Header/>
@@ -42,6 +46,7 @@ return (
           {coworking.address.city}
         </p>
         <button onClick={() => handleDeleteCoworking(coworking.id)}>Supprimer le coworking</button>
+        <button><Link to={`/coworkings/${coworking.id}/update`}>Update</Link></button>
       </div>
     ))}
     <Footer/>
