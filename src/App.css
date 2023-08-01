@@ -79,7 +79,7 @@ body {
     border-radius: 15px;
   }
 
-  .label-forma{
+  .forma{
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -93,10 +93,10 @@ body {
     align-items:flex-end;
   }
 
-  .updatingPage{
-    margin: 50px auto;
+  .login{
+    margin: 20px auto;
     width: 350px;
-    padding: 20px;
+    padding: 5px;
     border-radius: 15px;
   }
 

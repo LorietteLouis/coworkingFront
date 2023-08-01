@@ -46,7 +46,7 @@ return (
           {coworking.address.city}
         </p>
         <button onClick={() => handleDeleteCoworking(coworking.id)}>Supprimer le coworking</button>
-        <button><Link to={`/coworkings/${coworking.id}/update`}>Update</Link></button>
+        <button><Link to={`/admin/coworkings/${coworking.id}/update`}>Update</Link></button>
       </div>
     ))}
     <Footer/>
