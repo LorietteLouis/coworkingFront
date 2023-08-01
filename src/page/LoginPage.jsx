@@ -1,6 +1,8 @@
+import { useNavigate, useParams } from "react-router-dom";
 import Cookies from "js-cookie";
 
 const LoginPage = () => {
+    const navigate = useNavigate()
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
 
@@ -18,6 +20,7 @@ const LoginPage = () => {
 
     // si la réponse est valide
     if (loginResponse.status === 200) {
+        navigate("/");
       const loginData = await loginResponse.json();
 
       // je récupère le jwt dans le data
