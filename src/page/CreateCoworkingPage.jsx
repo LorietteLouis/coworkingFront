@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../component/Header";
+import Cookies from "js-cookie";
 
 const CreateCoworkingPage = () => {
     const navigate = useNavigate()
@@ -34,12 +35,15 @@ const CreateCoworkingPage = () => {
             city: address_city,
           },
         };
+
+        const token = Cookies.get("jwt")
     
         const responseCreate = await fetch("http://localhost:3010/api/coworkings",{
             method: "POST",
             body: JSON.stringify(coworkingData),
             headers:{
                 "Content-Type":"application/json",
+                Authorization: `Bearer ${token}`
             }
         })
         const responseCreateJs = await responseCreate.json()

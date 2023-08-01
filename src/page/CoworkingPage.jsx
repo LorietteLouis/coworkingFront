@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import { Link} from "react-router-dom";
+import Cookies from "js-cookie";
 
 
 const CoworkingsPage = () => {
@@ -17,13 +18,15 @@ const CoworkingsPage = () => {
     setCoworkings(responseJs.data);
   };
 
-  useEffect(() => {
-    fetchCoworkings();
-  }, [deleteCoworkingMessage]);
+  useEffect(() => { fetchCoworkings()}, [deleteCoworkingMessage]);
 
 const handleDeleteCoworking = async (coworkingId)  => {
+  const token = Cookies.get("jwt")
   const responseDelete =  await fetch(`http://localhost:3010/api/coworkings/${coworkingId}`, {
     method: "DELETE",
+    headers:{
+      Authorization: `Bearer ${token}`,
+    }
   });
 
   const responseDeleteJs = await responseDelete.json();
