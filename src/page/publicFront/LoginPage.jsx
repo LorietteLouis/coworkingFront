@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 
 const LoginPage = () => {
@@ -18,16 +18,17 @@ const LoginPage = () => {
       body: JSON.stringify({ username, password }),
     });
 
-    // si la réponse est valide
+    
     if (loginResponse.status === 200) {
-        navigate("/");
+       
       const loginData = await loginResponse.json();
 
-      // je récupère le jwt dans le data
+     
       const jwt = loginData.data;
 
-      // je stocke le jwt dans un cookie
+      
       Cookies.set("jwt", jwt);
+      navigate("/admin/dashboard");
     }
   };
 

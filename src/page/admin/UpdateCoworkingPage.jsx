@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Header from "../component/Header";
 import Cookies from "js-cookie";
+import HeaderAdmin from "../../component/HeaderAdmin";
 
 const UpdateCoworkingPage = () => {
   const { id } = useParams();
@@ -65,7 +65,7 @@ const UpdateCoworkingPage = () => {
     useEffect(()=>{fetchCoworking()},[])
     return (
         <>
-        <Header/>
+        <HeaderAdmin/>
         <form onSubmit={handleUpdateCoworking} className="updatingPage">
             <div className="update forma">
             <label htmlFor="name">Nom</label>

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "../component/Header";
-import Footer from "../component/Footer";
+import Footer from "../../component/Footer";
 import { Link} from "react-router-dom";
 import Cookies from "js-cookie";
+import HeaderAdmin from "../../component/HeaderAdmin";
 
 
 const CoworkingsPage = () => {
@@ -38,7 +38,7 @@ const handleDeleteCoworking = async (coworkingId)  => {
 
 return (
   <div>
-    <Header/>
+    <HeaderAdmin/>
     <h1>Liste des coworkings</h1>
     {deleteCoworkingMessage && <p>{deleteCoworkingMessage}</p>}
     {coworkings.map((coworking) => (

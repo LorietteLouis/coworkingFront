@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../component/Header";
-import Footer from "../component/Footer";
+import Footer from "../../component/Footer";
+import HeaderPublic from "../../component/HeaderPublic";
 
 const HomePage = () => {
   return (
     <>
-      <Header/>
+      <HeaderPublic/>
       <div className="home">
         <h1>HomePage</h1>
       </div>

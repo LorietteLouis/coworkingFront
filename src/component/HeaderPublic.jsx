@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 
-const Header = () => {
+const HeaderPublic = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -20,25 +20,28 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/"><button type="submit">Home</button></Link>
+          </li>
+          
+          <li>
+            <Link to="/login"><button type="submit">Login</button></Link>
           </li>
           <li>
-            <Link to="/admin/coworkings">List Coworking</Link>
-          </li>
-          <li>
-            <Link to="/admin/coworkings/create">Creation</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
+          <button type="submit">Logout</button>
           </li>
         </ul>
       </nav>
       <form onSubmit={handleSubmit}>
         <input type="text" name="search" placeholder="Search ..." />
         <button type="submit">Rechercher</button>
+      {/* {!coworking ? (
+        <p>No coworkings found</p>
+      ) : (
+      <div>LinktoResult</div>  
+      )} */}
       </form>
     </header>
   );
 };
 
-export default Header;
+export default HeaderPublic;

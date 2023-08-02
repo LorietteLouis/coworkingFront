@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import Header from "../component/Header";
 import Cookies from "js-cookie";
+import HeaderAdmin from "../../component/HeaderAdmin";
 
 const CreateCoworkingPage = () => {
     const navigate = useNavigate()
@@ -51,7 +51,7 @@ const CreateCoworkingPage = () => {
     };
     return (
         <>
-        <Header/>
+        <HeaderAdmin/>
         <form onSubmit={handleCreateCoworking} className="create-coworking">
           <div className="label forma">
             <label htmlFor="name">Nom</label>
